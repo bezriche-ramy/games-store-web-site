@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #eaeaea;
+    background-color: #2d2d2d;
     color: #333;
     padding: 20px;
     width: 1440px;
@@ -70,6 +70,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: -10px 0 20px -5px rgba(0, 0, 0, 0.5);
     border-radius: 40px;
     
     
@@ -89,6 +90,11 @@ footer {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: -10px 0 5px -5px rgba(255, 255, 255, 0.5);
+}
+.upbarbtn:hover {
+    transform: scale(1.00) translateX(-10px);
+    transition: transform 0.6s ease;
 }
 
 .search{
@@ -167,8 +173,8 @@ footer {
     transform: rotate(180deg);
     margin-left: 65px;
 }
-.product-cart{
-    height:267px ;
+.product-cart {
+    height: 267px;
     width: 341px;
     background-color: #000000;
     display: flex;
@@ -179,7 +185,13 @@ footer {
     color: #ffffff;
     border-radius: 40px;
     top: 233px;
-    
+    box-shadow: -10px 0 5px -5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-cart:hover {
+    transform: translate(-10px, -10px) scale(1.1);
+    box-shadow: -15px 0 15px -5px rgba(0, 0, 0, 0.7);
 }
 .product-cart a{
     text-decoration: none;
@@ -190,6 +202,14 @@ footer {
                 
 .mouseimg{
     border-radius: 40px;
+    margin-top: 15px;
+    box-shadow: -10px 0 5px -5px rgba(255, 255, 255, 0.5);
+   
+}
+.mouseimg:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .productp{
     color: #ffffff;
